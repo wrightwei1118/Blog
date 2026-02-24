@@ -1,0 +1,9 @@
+public/
+resources/
+.DS_Store
+.hugo_build.lock
+*.swp
+*.swo
+*~
+.idea/
+.vscode/

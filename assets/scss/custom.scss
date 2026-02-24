@@ -1,0 +1,107 @@
+/* ============================================
+   罗小黑战记 inspired color scheme
+   深色：夜空黑 + 灵力绿
+   浅色：薄荷白 + 鼠尾草绿
+   ============================================ */
+
+/* --- Dark Mode --- */
+:root[data-scheme="dark"] {
+    --body-background: #0d1117;
+
+    --accent-color: #2ecc71;
+    --accent-color-darker: #27ae60;
+    --accent-color-text: #fff;
+    --body-text-color: rgba(255, 255, 255, 0.75);
+
+    --card-background: #161b22;
+    --card-background-selected: rgba(46, 204, 113, 0.12);
+    --card-text-color-main: rgba(255, 255, 255, 0.9);
+    --card-text-color-secondary: rgba(255, 255, 255, 0.65);
+    --card-text-color-tertiary: rgba(255, 255, 255, 0.45);
+    --card-separator-color: rgba(46, 204, 113, 0.1);
+
+    --scrollbar-thumb: hsl(140, 30%, 30%);
+    --scrollbar-track: var(--body-background);
+
+    --pre-background-color: #0a0e14;
+    --pre-text-color: #a9dc76;
+
+    --code-background-color: #0a0e14;
+    --code-text-color: #a9dc76;
+
+    --blockquote-background-color: #161b22;
+    --table-border-color: #30363d;
+    --tr-even-background-color: #161b22;
+
+    --shadow-l1: 0px 4px 8px rgba(0, 0, 0, 0.3), 0px 0px 2px rgba(0, 0, 0, 0.4);
+    --shadow-l2: 0px 10px 20px rgba(0, 0, 0, 0.3), 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Light Mode --- */
+:root[data-scheme="light"] {
+    --body-background: #f0faf4;
+
+    --accent-color: #1a8a4a;
+    --accent-color-darker: #156b3a;
+    --accent-color-text: #fff;
+    --body-text-color: #3d4f5f;
+
+    --card-background: #ffffff;
+    --card-background-selected: rgba(26, 138, 74, 0.08);
+    --card-text-color-main: #1a2332;
+    --card-text-color-secondary: #4a6274;
+    --card-text-color-tertiary: #6b8299;
+    --card-separator-color: rgba(26, 138, 74, 0.12);
+
+    --scrollbar-thumb: hsl(140, 20%, 75%);
+}
+
+/* --- Avatar: green spirit glow --- */
+.sidebar header .site-avatar .site-logo {
+    border: 2px solid #2ecc71;
+    box-shadow: 0 0 12px rgba(46, 204, 113, 0.4),
+                0 0 24px rgba(46, 204, 113, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+.sidebar header .site-avatar .site-logo:hover {
+    box-shadow: 0 0 16px rgba(46, 204, 113, 0.6),
+                0 0 32px rgba(46, 204, 113, 0.25);
+}
+
+/* --- Card hover: float up with green shadow --- */
+.article-list article {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.article-list article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(46, 204, 113, 0.15),
+                0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Links --- */
+[data-scheme="dark"] {
+    --link-background-color: 46, 204, 113;
+    --link-background-opacity: 0.15;
+    --link-background-opacity-hover: 0.3;
+}
+
+[data-scheme="light"] {
+    --link-background-color: 26, 138, 74;
+    --link-background-opacity: 0.12;
+    --link-background-opacity-hover: 0.25;
+}
+
+/* --- Heading accent bar color --- */
+.article-content h2,
+.article-content h3,
+.article-content h4 {
+    border-color: #2ecc71;
+}
+
+/* --- Selection color --- */
+::selection {
+    background: rgba(46, 204, 113, 0.3);
+    color: inherit;
+}

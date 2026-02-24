@@ -1,0 +1,13 @@
+baseURL                = "https://wrightwei1118.github.io/Blog/"
+languageCode           = "zh-CN"
+title                  = "Wright's Blog"
+defaultContentLanguage = "zh-cn"
+hasCJKLanguage         = true
+theme                  = "hugo-theme-stack"
+
+[pagination]
+    pagerSize = 10
+
+[permalinks]
+    post = "/p/:slug/"
+    page = "/:slug/"
