@@ -45,9 +45,9 @@ favicon        = "img/avatar.png"
 
     [comments.giscus]
         repo             = "wrightwei1118/Blog"
-        repoID           = ""
+        repoID           = "R_kgDORX1Maw"
         category         = "Announcements"
-        categoryID       = ""
+        categoryID       = "DIC_kwDORX1Ma84C3HvP"
         mapping          = "title"
         lightTheme       = "light"
         darkTheme        = "dark_dimmed"
